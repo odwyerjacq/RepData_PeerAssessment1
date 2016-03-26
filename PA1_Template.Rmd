@@ -6,12 +6,12 @@ output: html_document
 ---
 
 ## Load data from working directory
-```{r}
+```{r echo = TRUE}
 activity <- read.csv("activity.csv", header = TRUE)
 ```
 
 Clean date from factor to date
-```{r}
+```{r echo = TRUE}
 activity$date <- as.Date(activity$date)
 ```
 
